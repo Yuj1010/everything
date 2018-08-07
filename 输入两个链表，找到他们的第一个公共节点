@@ -1,0 +1,51 @@
+/*
+输入两个链表，找到他们的第一个公共节点
+public class ListNode {
+    int val;
+    ListNode next = null;
+
+    ListNode(int val) {
+        this.val = val;
+    }
+}*/
+public class Solution {
+    public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
+        if(pHead1==null||pHead2==null){
+            return null;
+        }
+         if(pHead1==pHead2){
+            return pHead1;
+        }
+        int len1=getLength(pHead1);
+        int len2=getLength(pHead2);
+        ListNode list1=pHead1;
+        ListNode list2=pHead2;
+        if(len1>len2){
+           for(int i=0;i<len1-len2;i++){
+               list1=list1.next;
+           }
+        }
+        if(len1<len2){
+            for(int i=0;i<len2-len1;i++){
+               list2=list2.next;
+           }
+        }
+        while(list1!=null){
+            if(list1==list2){
+                return list1;
+            }
+            list1=list1.next;
+            list2=list2.next;
+        }
+        return null;
+    }
+    public static int getLength(ListNode pHead){
+        int len=0;
+        ListNode pNode=pHead;
+        while(pNode!=null){
+            pNode=pNode.next;
+            len++;
+        }
+        return len;
+    }
+}
