@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App.iml" filepath="$PROJECT_DIR$/.idea/modules/App.iml" group="App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App/App_main.iml" filepath="$PROJECT_DIR$/.idea/modules/App/App_main.iml" group="App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/App/App_test.iml" filepath="$PROJECT_DIR$/.idea/modules/App/App_test.iml" group="App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_main.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain_test.iml" group="domain" />
+      <module fileurl="file://$PROJECT_DIR$/mult-gradle.iml" filepath="$PROJECT_DIR$/mult-gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webService.iml" filepath="$PROJECT_DIR$/.idea/modules/webService.iml" group="webService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webService/webService_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webService/webService_main.iml" group="webService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webService/webService_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webService/webService_test.iml" group="webService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webcontroller.iml" filepath="$PROJECT_DIR$/.idea/modules/webcontroller.iml" group="webcontroller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webcontroller/webcontroller_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webcontroller/webcontroller_main.iml" group="webcontroller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webcontroller/webcontroller_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webcontroller/webcontroller_test.iml" group="webcontroller" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webdao.iml" filepath="$PROJECT_DIR$/.idea/modules/webdao.iml" group="webdao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webdao/webdao_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webdao/webdao_main.iml" group="webdao" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webdao/webdao_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webdao/webdao_test.iml" group="webdao" />
+    </modules>
+  </component>
+</project>
