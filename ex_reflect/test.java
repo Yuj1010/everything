@@ -5,43 +5,15 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-
-//class Person{
-//	private String name;
-//	private int age;
-//	public Person() {}
-//	public Person(String name, int age) {
-//		super();
-//		this.name = name;
-//		this.age = age;
-//	}
-//	@Override
-//	public String toString() {
-//		return "Person [name=" + name + ", age=" + age + "]";
-//	}
-//	public String getName() {
-//		return name;
-//	}
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//	public int getAge() {
-//		return age;
-//	}
-//	public void setAge(int age) {
-//		this.age = age;
-//	}
-//	
-//}
 //public class test{
 //	public static void main(String[] args) throws Exception  {
 //		Class<?> cls=Class.forName("ex_reflect.Person");
-//		//ÈÎºÎÊ±ºòµ÷ÓÃÀàÖÐµÄÆÕÍ¨·½·¨¶¼ÐèÒªÊµÀý»¯¶ÔÏó
+//		//ï¿½Îºï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		Object object=cls.newInstance();
-//		//È¡µÃsetNameÕâ¸ö·½·¨µÄÊµÀý»¯¶ÔÏó£¬ÉèÖÃ·½·¨Ãû³ÆÓë²ÎÊýÀàÐÍ
+//		//È¡ï¿½ï¿½setNameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		Method setMethod=cls.getMethod("setName", String.class);
-//		//ËæºóÍ¨¹ýMethodÀà¶ÔÏóµ÷ÓÃÖ¸¶¨·½·¨£¬µ÷ÓÃ·½·¨ÐèÒªÊµÀý»¯¶ÔÏó
-//		//Í¬Ê±´«Èë²ÎÊý
+//		//ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Methodï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		//Í¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		setMethod.invoke(object, "Yu");
 //		Method getMethod=cls.getMethod("getName");
 //		Object result=getMethod.invoke(object);
@@ -59,7 +31,7 @@ import java.lang.reflect.Method;
 //public class test{
 //	public static void main(String[] args) {
 //		Class<?> cls=Person.class;
-//		//È¡µÃÈ«²¿¹¹Ôì
+//		//È¡ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		Constructor<?>[] constructors=cls.getConstructors();
 //		for (Constructor<?> constructor : constructors) {
 //			System.out.println(constructor);
@@ -77,13 +49,13 @@ import java.lang.reflect.Method;
 //public class test {
 //
 //	public static void main(String[] args) {
-//		//È¡µÃClass¶ÔÏó
+//		//È¡ï¿½ï¿½Classï¿½ï¿½ï¿½ï¿½
 //		Class<?> cls=CLS.class; 
-//		//È¡µÃPackageÃû³Æ
+//		//È¡ï¿½ï¿½Packageï¿½ï¿½ï¿½ï¿½
 //		System.out.println(cls.getPackage().getName());
-//		//È¡µÃ¸¸ÀàÃû³Æ
+//		//È¡ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //		System.out.println(cls.getSuperclass().getName());
-//		//È¡µÃÊµÏÖ¸¸Àà½Ó¿Ú¶ÔÏó
+//		//È¡ï¿½ï¿½Êµï¿½Ö¸ï¿½ï¿½ï¿½Ó¿Ú¶ï¿½ï¿½ï¿½
 //		Class<?>[] iclass=cls.getInterfaces();
 //		for (Class<?> class1 : iclass) {
 //			System.out.println(class1.getName());
