@@ -1,13 +1,17 @@
+修改一个参数
 
 % 抽样数为N
 clear
 clc
 N=61;
 wc=pi/3;
+T1=0.8;
 dw = 2*pi/1000;   
+N=N+mod(N+1,2);                                 % 使N成为奇数 
 N1=fix(wc/(2*pi/N));
-N2=N-N1-1;
-A=[ones(1,N1+1),zeros(1,N2)];
+N2=N-2*N1-1;   
+%A=[ones(1,N1+1),zeros(1,N2)];
+A=[ones(1,N1+1),T1,zeros(1,N2-2),T1,ones(1,N1)];	% 符幅特性样本序列
 theta=-pi*[0:N-1]*(N-1)/N;
 H=A.*exp(j*theta);
 h=real(ifft(H));
@@ -36,8 +40,7 @@ axis([0,1,-80,10]);
 title('幅度响应'); xlabel('频率（单位：pi）');
 ylabel('分贝数');
 subplot(2,2,4);
-plot(ww/pi,2*Ar,wl(1:N)/pi,A(1:N),'.');
+plot(ww/pi,Ar,wl(1:N)/pi,A(1:N),'.');
 axis([0,1,-0.2,1.2]); title('符幅响应')
 xlabel('频率（单位：pi）'); ylabel('Ar(w)')
-
 
