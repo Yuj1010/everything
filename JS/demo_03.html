@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>浏览器对象</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>   
+ </head>
+ <body>
+  <!--先编写好网页布局-->
+  <p><b id="s">5</b>秒后返回主页<a href="#" onclick="goBank()">返回</a></p>
+  
+ 
+  <script type="text/javascript">  
+ 
+   //获取显示秒数的元素，通过定时器来更改秒数。
+   //通过window的location和history对象来控制网页的跳转。
+   
+   var sec=5;
+   var time=setInterval(clock,1000);
+   
+   function clock(){
+       if(sec<=1){
+           clearInterval(time);
+           window.location.href="http://www.daidu.com";
+       }else{
+           sec--;
+           document.getElementById("s").innerHTML=sec;
+       }
+   }
+   
+   function goBack(){
+       window.history.back();
+   }
+   
+ </script> 
+</body>
+</html>
